@@ -4,7 +4,7 @@ import styles from './page.module.css'
 export default function Home() {
   return (
     <main>
-      <div id="hero">
+      <div className={styles.hero}>
         <h1>Aula invertida - TDS2</h1>
         <ul>
           <li>Pablo Couto</li>
