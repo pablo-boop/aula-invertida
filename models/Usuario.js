@@ -21,17 +21,6 @@ export class GameList {
         return this.gameList.push(param)
     }
 
-    edit(id, nome, categoria, preco, criador) {
-        this.gameList.map((game) => {
-            if (game.id == id) {
-                game.nome = nome;
-                game.categoria = categoria;
-                game.preco = preco;
-                game.criador = criador;
-            }
-        });
-    }
-
     delete(id) {
         this.gameList = this.gameList.filter((game) => game.id !== id);
     }
