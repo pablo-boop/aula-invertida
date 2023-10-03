@@ -1,9 +1,12 @@
-import Image from 'next/image'
 import styles from './page.module.css'
+import Header from './components/header/Header'
+import Footer from './components/footer/footer'
+
 
 export default function Home() {
   return (
     <main>
+      <Header/>
       <div className={styles.hero}>
         <h1>Aula invertida - TDS2</h1>
         <ul>
@@ -22,7 +25,8 @@ export default function Home() {
           </p>
         </div>
       </div>
-      
+
+      <Footer/>
     </main>
   )
 }

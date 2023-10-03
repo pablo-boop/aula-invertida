@@ -1,0 +1,51 @@
+    .noah{
+        display: flex;
+        background-color: rgb(65, 20, 62);
+        margin: -8px;
+        padding: 0;
+        color: white;
+    }
+    .h1{
+        margin-left: 2vw;
+    }
+    .h2{
+        margin-left: 4vw;
+        margin-top: 4.5vh;
+        color: #b0399d;
+    }
+    .pa{
+        margin-left: 1vw;
+        margin-top: 4.5vh;
+        color: #fa200e;
+    }
+    .ra{
+        margin-left: 1vw;
+        margin-top: 4.5vh;
+        color: #f14283;
+    }
+    .no{
+        margin-left: 1vw;
+        margin-top: 4.5vh;
+        color: #b0399d;
+    }
+    .na{
+        margin-left: 1vw;
+        margin-top: 4.5vh;
+        color: #fa200e;
+    }
+    .da{
+        margin-left: 1vw;
+        margin-top: 4.5vh;
+        color:#f14283;
+    }
+    .ca{
+        margin-left: 1vw;
+        margin-top: 4.5vh;
+        color: #b0399d;
+    }
+    .pablo{
+        font-size: xx-large;
+        margin-top: 3.1vh;
+        margin-left: 16.5vw;
+        color: white;
+    }
