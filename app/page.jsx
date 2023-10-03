@@ -15,6 +15,9 @@ export default function Home() {
           <li>Nathan Henrique</li>
         </ul>
       </div>
+      <div className={styles.info}>
+        <h2>Informações</h2>
+      </div>
     </main>
   )
 }
