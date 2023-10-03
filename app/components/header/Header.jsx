@@ -1,4 +1,5 @@
 import styles from "./header.module.css"
+import Link from 'next/link'
 const Header = () =>{
     return(
         <div className={styles.noah}>
@@ -10,6 +11,7 @@ const Header = () =>{
             <h2 className={styles.na}>Nathan</h2>
             <h2 className={styles.da}>Daniel</h2>
             <h2 className={styles.ca}>Caio</h2>
+            <Link href={""} className={styles.pablo}>To-Do List</Link>
         </div>
     )
 }

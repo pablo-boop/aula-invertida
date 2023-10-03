@@ -1,0 +1,20 @@
+.noah{
+    display: flex;
+    background-color: rgb(65, 20, 62);
+    margin: -8px;
+    padding: 0;
+    color: white;
+   margin-top: 7vh;
+}
+.h1{
+    margin-left: 2vw;
+}
+.h5{
+    margin-top: 6vh;
+    margin-left: 31.5vw;
+}
+.icon{
+    margin-left: 38.5vw;
+    font-size: 35px;
+    margin-top: 3.5vh;
+}
