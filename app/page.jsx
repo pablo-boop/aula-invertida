@@ -1,6 +1,7 @@
-import Image from 'next/image'
 import styles from './page.module.css'
 import Header from './components/header/Header'
+import Footer from './components/footer/footer'
+
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
           <li>Nathan Henrique</li>
         </ul>
       </div>
+      <Footer/>
     </main>
   )
 }
