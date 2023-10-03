@@ -5,7 +5,7 @@ export class Game {
         this.categoria = categoria;
         this.preco = preco;
         this.criador = criador;
-}
+    }
 
     generateId() {
         return Math.floor(Math.random() * 1000)
@@ -18,15 +18,21 @@ export class GameList {
     }
 
     add(param) {
-        this.gameList.push(param)
-        console.log(this.gameList);
+        return this.gameList.push(param)
     }
 
-    edit(id) {
-
+    edit(id, nome, categoria, preco, criador) {
+        this.gameList.map((game) => {
+            if (game.id == id) {
+                game.nome = nome;
+                game.categoria = categoria;
+                game.preco = preco;
+                game.criador = criador;
+            }
+        });
     }
 
     delete(id) {
-
+        this.gameList = this.gameList.filter((game) => game.id !== id);
     }
 }
