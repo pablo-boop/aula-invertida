@@ -20,15 +20,27 @@ const GamePage = () => {
             <div className={style.hero}>
                 <h1>Lista de Jogos</h1>
                 <div className={style.input}>
-                    <input type="text" placeholder="Nome do jogo" value={gameName} onChange={e => { setGameName(e.target.value) }} />
-                    <input type="text" placeholder="Categoria do jogo" value={gameCategory} onChange={e => { setGameCategory(e.target.value) }} />
-                    <input type="text" placeholder="Preço do jogo" value={gamePrice} onChange={e => { setGamePrice(e.target.value) }} />
-                    <input type="text" placeholder="Criador do jogo" value={gameCreator} onChange={e => { setGameCreator(e.target.value) }} />
-                    <button onClick={addGame}>Registrar</button>
+                    <input  className={style.inputElements} type="text" placeholder="Nome do jogo" value={gameName} onChange={e => { setGameName(e.target.value) }} />
+                    <input  className={style.inputElements} type="text" placeholder="Categoria do jogo" value={gameCategory} onChange={e => { setGameCategory(e.target.value) }} />
+                    <input  className={style.inputElements} type="text" placeholder="Preço do jogo" value={gamePrice} onChange={e => { setGamePrice(e.target.value) }} />
+                    <input  className={style.inputElements} type="text" placeholder="Criador do jogo" value={gameCreator} onChange={e => { setGameCreator(e.target.value) }} />
+                    <button className={style.inputElements}  onClick={addGame}>Registrar</button>
+                </div>
+                <div className={style.list}>
+                    {
+                        gameArray.gameList.map((game, index) => (
+                            <div key={index}>
+                            <h3><strong>Nome: </strong>{game.nome}</h3>
+                                <p><strong>Categoria: </strong>{game.categoria}</p>
+                                <p><strong>Preço: </strong>{game.preco}</p>
+                                <p><strong>Criador: </strong>{game.criador}</p>
+                            </div>
+                        ))
+                    }
                 </div>
             </div>
         </>
     )
 }
 
-export default GamePage
+export default GamePage;
