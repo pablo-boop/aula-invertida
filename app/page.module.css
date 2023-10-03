@@ -15,6 +15,21 @@
 }
 
 .hero li {
-    font-size: 20px;
+    font-size: 25px;
     margin: 0.3rem;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-color: #e6e6e6;
+    width:  50%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    padding: 4rem;
+}
+.info p {
+    text-align: justify;
+    font-size: 20px;
 }
