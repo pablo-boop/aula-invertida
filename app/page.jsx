@@ -1,9 +1,11 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import Header from './components/header/Header'
 
 export default function Home() {
   return (
     <main>
+      <Header/>
       <div className={styles.hero}>
         <h1>Aula invertida - TDS2</h1>
         <ul>
