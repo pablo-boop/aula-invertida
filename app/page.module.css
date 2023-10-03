@@ -25,6 +25,8 @@
     align-content: center;
     background-color: #e6e6e6;
     width:  50%;
+    margin-top: 2%;
+    margin-bottom: 1%;
     padding: 4rem;
 }
 .info p {
